@@ -1,0 +1,23 @@
+*************************** enunciado **************************
+
+Resumen de la primera sesión del jueves 30 de Enero
+Escribe un resumen corto de en torno a 140 caracteres de la lección vista en clase, correspondiente a la presentación "2 Agentes inteligentes"
+
+************************** mi resumen ************************** 
+ 
+Resumen 30 de Enero:
+
+Vimos una visión un poco más detallada sobre ellos agentes racionales. Éstos están en un entorno percibiendo todo el rato y actúa con actuadores, sensores... Podemos definir el agente mediante una función. 
+
+El entorno cambia por el agente o por él mismo. Hay varios tipos de entornos: observables, episodicos, estáticos.. 
+
+Ejemplo: una aspiradora. 
+
+*************** Nota y aclaraciones del profesor *************** 
+
+Calificación	10,00 / 10,00
+
+Comentarios de retroalimentación:	
+Hubiera estado bien que también comentaras que vimos varias arquitecturas de agentes de alto nivel.
+
+****************************************************************

@@ -1,0 +1,36 @@
+*************************** enunciado **************************
+
+Resumen de la primera sesión del miércoles 19 de Febrero
+
+Escribe un resumen corto de en torno a 140 caracteres de la lección vista en clase, correspondiente a la presentación "5 Búsqueda local, páginas 1 a 12 "
+
+************************** mi resumen ************************** 
+
+Resumen 19 de Febrero:
+
+En muchos problemas de optimización la ruta es irrelevante. En estos casos podemos usar algoritmos de mejora iterativos, que mantienen un estado actual y tratan de mejorarlo.
+
+Varios ejemplos como el de las n-reinas, el problema del vendedor ambulante..
+
+Hill-climbing: el algoritmo de escalada simple es un algoritmo iterativo que comienza con una solución arbitraria, luego intenta encontrar una mejor solución haciendo un cambio en la solución. Si el cambio produce una mejor solución, se realiza otro cambio en la solución, y así sucesivamente hasta no encontrar más mejoras. (como hemos visto aplicado al problema de las n-reinas)
+
+Variantes del hill climbing:
+
+sideways moves: permitir movimientos cuando no hay movimientos hacia arriba.
+stochastic hill climbing: la escalada estocástica elige al azar los movimientos cuesta arriba.
+first-choice hill climbing: la escalada de primera elección implementa la escalada estocástica de colinas generando sucesores aleatoriamente hasta que se genere uno que sea mejor que el estado actual.
+Éstos algoritmos son incompletos, pueden quedarse atrapados y no poder moverse. Intenta solucionarse con:
+
+Random-restart hill climbing: la idea es recorrer desde un estado aleatorio, si encontramos una solución antes de un tiempo de espera la devolvemos, si no, detenemos la búsqueda y comenzamos de nuevo desde un estado nuevo aleatorio y se va iterando hasta encontrar una solución.
+El coste es mayor porque tenemos que ejecutar la búsqueda muchas veces, pero para algunos problemas es eficaz
+
+
+*************** Nota y aclaraciones del profesor *************** 
+
+Calificación	8,00 / 10,00
+
+Comentarios de retroalimentación:	
+No todos los estados son solución, sólo son solución aquellos estados que pasan el goal test de la formulación del problema: eso se dice en la página 6 de la presentación. Recordemos que estamos resolviendo problemas definidos tal y como describimos en la presentación sobre búsqueda no informada, en la página 6. Por ejemplo un estado de las n-reinas en las que alguna reinas se atacan no es una solución, sólo son solución los estados en los que las reinas no se atacan, que son los que pasan el goal test. De hecho que un estado sea solución, es decir, que pase el goal test, es la condición de parada de random-restart hill climbing.
+Los variantes de hill climbing distintas de random-restart son incompletas porque se pueden quedar paradas en un estado que no es solución. Si hill climbing se queda atrapado en un estado que es solución eso no es problema sino el caso mejor, porque en ese caso hill-climbing devolverá una solución como resultado
+
+****************************************************************

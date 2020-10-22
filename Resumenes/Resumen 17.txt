@@ -1,0 +1,18 @@
+*************************** enunciado **************************
+
+Resumen del Tema 9. Drools
+
+************************** mi resumen ************************** 
+
+Drools es un sistema de gestión de reglas.
+
+Proporciona un motor de reglas que procesa hechos y produce resultados como resultado del procesamiento de reglas y hechos.
+
+Drools se divide en dos:
+La creación de Reglas archivos (archivos .DRL).
+La creación de memoria de trabajo y manejando la activación.
+Un sistema de reglas de producción es un motor de inferencia que puede escalar a una gran cantidad de reglas y hechos. El motor de inferencia compara hechos y datos con las reglas de producción para sacar conclusiones que se convierten en acciones.
+
+La primera fase del sistema basado en reglas es Pattern Matching (emparejamiento de patrones): implementa una extensión del algoritmo RETE, el RETEOO.
+
+****************************************************************

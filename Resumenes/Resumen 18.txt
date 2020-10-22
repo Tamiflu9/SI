@@ -1,0 +1,50 @@
+*************************** enunciado **************************
+
+Resumen del Tema 10
+
+************************** mi resumen ************************** 
+
+Agente Software. Entidad autónoma que interacciona con el entorno
+
+
+tipos: accesibles, inaccesibles, deterministas, indeterministas, discreto, continuo..
+
+Características.
+
+Entidades autónomas. 
+
+Pueden percibir su entorno y responden a cambios que se producen en el mismo.
+
+El agente decide que acciones realizar para cumplir unos objetivos, dependiendo de la configuración del entorno.
+
+Debe tener inteligencia:
+
+Tiene un razonamiento para decidir como actuar para alcanzar un objetivo,.
+Tienen que ser capaces de adaptarse a cambios.
+Sistema multi-agente : Resolución de problemas mediante divide y vencerás. Heterogeneidad. Concurrencia y distribución.
+
+Movilidad. Esos agentes se pueden mover de un nodo a otro en una red.
+
+Comunicación entre agentes. Hace falta un lenguaje de comunicación.
+
+Utilidad:
+
+proporcionan aspectos sociales, lenguajes y protocoles de comunicación entre agentes, distribuyen datos, control, etc.
+facilitan la evolución. 
+tienen un mayor grado de abstracción.
+Diseño:
+
+arquitectura BDI. Se basa en el razonamiento práctico. 
+
+arquitectura de pizarra. Las fuentes de información se activan de forma 'oportunista'. 
+
+JADE. Plataforma de agente más extendida. 
+
+ACC. implementa los servicios de mensajería.
+DF. donde se registra los agentes.
+AMS. gestiona los agentes en una plataforma.
+El comportamiento se codifica mediante clases de objetos. 
+Existe una clasificación de comportamientos. 
+Existe un hilo de ejecución por agente. Cada agente es responsable de la ejecución de su comportamiento.
+
+****************************************************************

@@ -1,0 +1,39 @@
+*************************** enunciado **************************
+
+Resumen de la segunda parte del Tema 8
+
+************************** mi resumen ************************** 
+
+SOBRE-AJUSTE
+
+Cuando un árbol de decisión tiene muchos datos de entrada. Se evita eliminando nodos con los que la ganancia de información es casi nula.
+
+EVALUAR Y ELEGIR UNA HIPÓTESIS
+
+Los datos de test tienen que ser similares a los datos de entrenamiento.
+Podemos medir la precisión de una hipótesis según las veces que se equivoque. Se hace con los datos de test.
+
+ESTIMACIÓN / EVALUACIÓN DE CALIDAD
+
+holdout cross-validation: separa aleatoriamente los datos (entrenamiento, tes
+k-fold cross-validation: (mejor) Separa los datos en k subconjuntos de igual tamaño. Hace k ejecuciones de aprendizaje. 
+Unos cuantos trozos para entrenar y otros para test y repetimos en varios experimentos. Luego se hace la media de esos experimentos.
+
+HYPERPARAMETER
+
+Si el algoritmo de aprendizaje tiene hiperparámetros hay que ajustarlos.
+
+conjunto de test
+conjunto de entrenamiento
+conjunto de validación
+
+SELECCIÓN DE MODELO
+
+Buscar el espacio de hipótesis mejor para no sobreajustar los datos
+Optimizar: dentro del espacio de hipótesis encontrando la mejor.
+Medimos cuanto se equivoca un algoritmo en una predicción se usa una función de coste. Para minimizar la función de coste:
+
+gradient descent: para encontrar dentro del espacio de peso el valor menor, gracias la valor que marcan las derivadas parciales.
+stochastic gradient descent: solo coge unos pocos ejemplos.
+
+****************************************************************

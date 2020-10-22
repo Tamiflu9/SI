@@ -1,0 +1,67 @@
+*************************** enunciado **************************
+
+Resumen de la segunda sesión del miércoles 4 de Marzo
+
+Escribe un resumen corto de en torno a 140 caracteres de la lección vista en clase, correspondiente a la presentación "7 Problemas de satisfacción de restricciones", páginas 1 a 31
+
+************************** mi resumen ************************** 
+
+Resumen 4 de Marzo:
+
+Problemas de satisfacción de restricciones.
+
+La prueba de objetivos es un conjunto de restricciones que especifican combinaciones permitidas de valores para subconjuntos de variables.
+
+Es un simple ejemplo de lenguaje de representación formal. Proporciona algoritmos útiles de propósito general con más potencia que el espacio estándar.
+
+- La asignación de un valor a una variable a menudo hace que el conjunto de valores admisibles para otras variables sea más pequeño: propagación de restricciones.
+
+- Una vez que una asignación de valores a algunas variables no es una solución, podemos dejar de asignar valores inmediatamente a otros valores, ya que eso no conducirá a una solución.
+
+- Podemos centrarnos en las variables involucradas en más restricciones, especialmente aquellas difíciles de satisfacer, para podar el espacio de búsqueda más rápido.
+
+Vemos un ejemplo: mapa-coloreado. Cuya solución al problema son tareas que satisfacen todas las limitaciones.
+
+Problemas de satisfacción de restricciones binarias, cada restricción se relaciona como máximo con dos variables.
+
+Los algoritmos CSP de uso general utilizan la estructura gráfica para acelerar la búsqueda.
+
+Variedades de restricciones:
+
+Las restricciones unarias implican una sola variable.
+Las restricciones binarias implican pares de variables.
+Las restricciones de orden superior implican 3 o más variables.
+Preferencias (restricciones suaves) a menudo representables por un costo para cada asignación variable. Problemas de optimización restringidos.
+Restricción disyuntiva: alternativa entre 2 restricciones, solo una de ellas necesita ser satisfecha para que toda la restricción sea satisfecha.
+Búsqueda de retroceso
+
+Las asignaciones variables son conmutativas. solo necesita considerar asignaciones a una sola variable en cada nodo.
+
+Cada nivel del árbol corresponde a una variable particular.
+
+Búsqueda en profundidad de CSP con asignaciones de una sola variable se denomina búsqueda de retroceso.
+
+Necesitamos llegar a profundidad n de todos modos para encontrar una asignación para todas las variables. Es el algoritmo desinformado básico para los CSP.
+
+El algoritmo alterna entre:
+
+Buscar: elegir nuevas asignaciones de variables.
+Propagación de restricciones: tipo específico de inferencia que elimina los dominios de las variables.
+Valores mínimos restantes. Elige la variable con la menor cantidad de valores legales.
+
+Grado heurístico. Elige la variable con más restricciones en las variables restantes.
+
+Valor de menor restricción. Dada una variable, elegir el valor menos restrictivo, el que descarta la menor cantidad de valores en las variables restantes.
+
+Comprobación de avance. Realiza un seguimiento de los valores legales restantes para las variables no asignadas. La búsqueda finaliza cuando alguna variable no tiene valores legales.
+
+Consistencia del arco. La forma más simple de propagación hace que cada arco sea consistente.
+
+*************** Nota y aclaraciones del profesor *************** 
+
+Calificación	9,00 / 10,00
+
+Comentarios de retroalimentación:	
+Este resumen es excesivamente largo, por favor intenta hacer resumenes más concisos en el futuro
+
+****************************************************************

@@ -1,0 +1,29 @@
+*************************** enunciado **************************
+
+Resumen de la tercera parte del Tema 8
+
+************************** mi resumen ************************** 
+
+La regresión lineal multivariable puede sufrir overfitting. Solución -> usar una regularización.
+
+Esto define varias funciones de regularización. L1 además de reducir el sobreajuste, hace que el modelo tenga menos parámetros.
+
+Para usar regresión linear en la clasificación lineal debemos usar la regla de aprendizaje del perceptrón, ya que si no, la función umbral no es diferenciable.
+
+Pero es mejor usar la regresión logística. Con ella usamos el descenso de gradiente y vemos los mejores valores de los pesos para minimizar la función de coste. 
+
+NEURONAS
+
+Si el impulso eléctrico es suficientemente grande se conecta a la neurona.
+
+La entrada a la neurona es una combinación lineal de los pesos y pasan por una función de activación. Esto nos da un valor y devuelve el nivel de activación de la neurona. Estructuras:
+
+feed-forward networks: va hacia delante. La información la reciben de la unidad anterior. Las neuronas no tienen un estado interno por niveles.
+
+recurrent networks: hay unidades que pueden relacionar hacia atrás, pueden producirse bucles.. Tienen memoria a corto plazo.
+
+single-layer perceptrons: cada entrada se conecta con cada salida. Las salidas operan separadamente.
+
+multilayer perception: Hay que hacer redes de más niveles (niveles intermedios ocultos). Así se puede representar cualquier función.
+
+****************************************************************

@@ -1,0 +1,29 @@
+*************************** enunciado **************************
+
+Resumen de la segunda sesión del miércoles 19 de Febrero
+
+Escribe un resumen corto de en torno a 140 caracteres de la lección vista en clase, correspondiente a la presentación "5 Búsqueda local, páginas 13 a 20 "
+
+************************** mi resumen ************************** 
+	
+Resumen 19 de Febrero:
+
+Haciendo un resumen vemos que el algoritmo Hill climbing es eficiente pero no completo, ya que puede atascarse, y el Random walk es completo pero ineficiente.
+
+El algoritmo Simulated annealing  combina ambos algoritmos (Hill climbing y Random walk) para lograr eficiencia y completitud.
+
+La idea es escapar de los máximos locales al permitir algunos movimientos malos pero gradualmente disminuir su tamaño y frecuencia.
+
+El algoritmo Local Beam search realiza un seguimiento de k estados, similar al de Hill climbing. Comienza con k estados generados aleatoriamente, para cada caso genera sucesores de todos los k estados, si obtenemos un mejor estado en los sucesores devuelve el mejor y si no, k itera.
+
+El problema es que los estados k no son diversos, se concentran en una pequeña región del espacio de estados, por lo que busca una versión más costosa de la escalada. La solución es la Stochastic Local Beam search, análoga a la Stochastic Hill Climbing.
+
+*************** Nota y aclaraciones del profesor *************** 
+
+Calificación	10,00 / 10,00
+
+Comentarios de retroalimentación: 
+Buen resumen.
+Entiendo que con "disminuir su tamaño" te refieres a la diferencia entre el valor del estado actual y el valor del sucesor, que influye en la probabilidad de moverse a un sucesor peor.
+
+****************************************************************

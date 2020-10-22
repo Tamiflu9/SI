@@ -1,0 +1,33 @@
+*************************** enunciado **************************
+
+Resumen de la segunda sesión del miércoles 12 de Febrero
+
+Escribe un resumen corto de en torno a 140 caracteres de la lección vista en clase, correspondiente a la presentación "4 Busqueda informada"
+
+************************** mi resumen ************************** 
+
+ Resume 12 de Febrero:
+
+Vimos diferentes algoritmos de búsqueda.
+
+Best-first search: es un algoritmo de búsqueda que se expande hacia el nodo mas prometedor elegido. Está implementada con una cola ordenada en orden decreciente de conveniencia.
+
+Casos especiales:
+
+Greedy search. (se preocupa por el futuro)
+Sigue una heurística consistente en elegir la opción óptima en cada paso para llegar a la solución más óptima.
+
+Estima el coste desde n hasta la meta mas cercana. Vimos un ejemplo de como llegar hasta Bucarest. Expande el nodo que parece estar cercano al objetivo. 
+
+A* search (le da el mismo peso al pasado que al futuro)
+Sigue la función heurística que evita expandir caminos que ya son costosos. 
+Es eficiente para cualquier heurística consisitente, pero no se garantiza que otro algoritmo pueda expandirse con menos nodos. Puede ser poco práctica para problemas a gran escala pero podemos usar varientes de A* o heurísticas que no son admisibles pero aceleran la búsqueda. Pero el gran problema es la complejidad del espacio, puede haber muchos estados.
+
+*************** Nota y aclaraciones del profesor *************** 
+
+Calificación	10,00 / 10,00
+
+Comentarios de retroalimentación	
+Buen resumen....
+
+****************************************************************

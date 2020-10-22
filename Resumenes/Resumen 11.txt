@@ -1,0 +1,38 @@
+*************************** enunciado **************************
+
+Resumen de la primera sesión del miércoles 4 de Marzo
+
+Escribe un resumen corto de en torno a 140 caracteres de la lección vista en clase, correspondiente a la presentación "6 Búsqueda con adversario y juegos", páginas 35 a 44
+
+************************** mi resumen ************************** 
+
+Resumen 4 de Marzo:
+
+El algoritmo para el juego no determinista 'Expectiminimax' ofrece un juego perfecto, al igual que 'Minimax', excepto que también debemos manejar los nos de cambio usando el valor esperado para los nodos casuales.
+
+En los juegos no deterministas también usamos  Eval(evaluación) y CurOff. Pero el uso de una función que define el mismo orden sobre los estados que la utilidad no garantiza que se tome la misma decisión de 'minimax'.
+
+Esto se debe a que 'Expectiminimax' combina valores no solo con las operaciones min y max, que solo se preocupan por el orden, sino que también se combinan usando un promedio ponderado, que se preocupa por la magnitud relativa de los resultados.
+
+También hay una variante de alfa-beta con nodos casuales, pero es mucho menos efectiva. A medida que aumenta la profundidad, la probabilidad de llegar a un nodo dado se reduce, el valor de búsqueda anticipada disminuye.
+
+Una alternativa a alfa-beta con posibilidad de optimizar la búsqueda en H-Expectiminimax es la simulación de Monte Carlo. La simulación monte Carlo parte de un estado dado, juega miles de juegos usando tiradas de daos al azar para los nodos y búsquedas alfa-beta u otro algoritmo.
+
+Los juegos de información imperfecta calculan el valor mínimo de cada acción en cada oferta, luego elige la acción con el mayor valor esperado sobre todas las ofertas. 
+
+Esto reduce el problema parcialmente observable (debido a la falta de información generada aleatoriamente) al problema determinista previo completamente observable.
+
+También podemos usar H-Minimax en lugar de Minimax para ajustar el equilibrio de precisión / rendimiento.
+
+La incertidumbre limita la asignación de valores a los estados.
+
+Las decisiones óptimas dependen del estado de la información, no del estado real.
+
+*************** Nota y aclaraciones del profesor *************** 
+
+Calificación	10,00 / 10,00
+Comentarios de retroalimentación:	
+Buen resumen
+
+****************************************************************
+

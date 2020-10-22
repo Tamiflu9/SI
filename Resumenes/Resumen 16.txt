@@ -1,0 +1,38 @@
+*************************** enunciado **************************
+
+Resumen del Tema 9
+
+************************** mi resumen ************************** 
+
+Sistemas basados en reglas. Técnicas basadas en conocimiento -> mediante reglas.
+
+Definimos el comportamiento del sistema en base a reglas. Construimos reglas con las que vamos a decirle al sistema lo que tiene que hacer en cada momento.
+
+Sistemas expertos: Un analista construye las reglas en base al conocimiento obtenido de un experto.
+
+Tipos de programas.
+
+Programas secuenciales: las instrucciones se ejecutan de forma secuencial.
+Programas basados en eventos: dependiendo de la información que entre reconoce unos eventos y estos activan unas u otras reglas.
+Arquitectura de un sistema de reglas.
+
+Conocimiento : los datos que maneja el sistema de reglas.
+         - Base de reglas. conocimiento procedimental.
+         - Base de hechos. conocimiento factual.
+Programa : como funciona el sistema de reglas.
+         - Intérprete de reglas. 
+En sistema basado en reglas hay un ciclo de operación que ejecuta las reglas. 
+Reconocimiento. determina las reglas que son aplicables.
+Selección de conflictos. decide que reglas ejecutar mediante una estrategia de control.
+Ejecución de la regla.
+Se inicializa la agenda y vuelve al punto 1, hasta que se alcanza el objetivo.
+Tipos de razonamientos:
+
+Encadenamiento progresivo: dirigido por los datos. (la que mas se usa)
+Encadenamiento regresivo: dirigido por los objetivos. 
+Fase de reconocimiento (para saber que reglas se van activan)
+
+mediante el algoritmo RETE el sistema basado en reglas es eficiente.
+En cada ciclo los cambios en la memoria de trabajo son los que activan las reglas. Los nuevo hechos generado son los que determinan las nuevas reglas.
+
+****************************************************************

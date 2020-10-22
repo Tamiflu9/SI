@@ -1,0 +1,46 @@
+*************************** enunciado **************************
+
+Resumen de la segunda sesión del miércoles 26 de Febrero
+
+Escribe un resumen corto de en torno a 140 caracteres de la lección vista en clase, correspondiente a la presentación "6 Búsqueda con adversario y juegos", páginas 1 a 34
+
+************************** mi resumen ************************** 
+
+Resumen 26 de Febrero:
+
+Tipos de juegos: determinista, casualidad, información perfecta, información imperfecta.
+
+En un problema de búsqueda normal, la solución óptima sería una secuencia de acciones que conduzcan a un estado objetivo. En una búsqueda contradictoria, MIN tiene algo que decir al respecto. MAX no tiene forma de saber con certeza qué efectuará un movimiento en la jugada, porque MIN puede reaccionar de cualquier manera (análoga al problema de la búsqueda con acciones no deterministas).
+
+En lugar de sucesores consideramos:
+
+ACCIONES conjunto de posibles acciones del estado s.
+RESULTADOS conjunto de posibles estados resultantes de realizar una acción en un estado s.
+Solución un subárbol que:
+
+tiene un nodo objetivo en cada hoja
+especifica una acción en cada uno de sus nodos OR
+incluye cada rama de resultado en cada uno de sus nodos AND.
+Minimax elige moverse a la posición con el valor minimax más alto. 
+
+La estrategia óptima se puede determinar a partir del valor mínimo de cada nodo.
+
+La decisión minimax en la raíz es la acción A1, que es la opción óptima para MAX porque conduce al estado con el valor minimax más alto.
+
+La poda α-β es una técnica para calcular el valor correcto de minimax sin mirar cada nodo en el árbol del juego.
+
+α: estimación más alta del valor mimimax que hemos visto hasta ahora desde un nodo MAX.
+β: estimación más baja del valor mimimax que hemos visto hasta ahora desde un nodo MIN.
+El algoritmo α-β es muy similar al algoritmo minimax, excepto por el mantenimiento de α y β, y la prueba de poda. La poda no afecta el resultado final: calcula correctamente la decisión mimimax.
+
+La búsqueda α-β todavía tiene que ir hasta los estados terminales de una parte del espacio del juego: esos son los casos base de la recursividad. La profundidad no es práctica para decidir movimientos en pocos minutos.
+
+*************** Nota y aclaraciones del profesor *************** 
+
+Calificación	10,00 / 10,00
+
+Comentarios de retroalimentación:	
+Buen resumen.
+En el algoritmo minimax la estrategia óptima no se determina a partir del valor mínimo de cada nodo: lo que se hace es suponer que el jugador MAX tomará la decisión que maximiza la utility, por tanto cogiendo la rama que maximice el valor minimax sobre el subarbol correspondiente, mientras que el jugador MIN tomará la decisión que minimiza la utility, por tanto cogiendo la rama que minimice el valor minimax sobre el subarbol correspondiente
+
+****************************************************************

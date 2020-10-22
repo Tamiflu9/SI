@@ -1,0 +1,30 @@
+*************************** enunciado **************************
+
+Resumen de la primera sesión del miércoles 26 de Febrero
+
+Escribe un resumen corto de en torno a 140 caracteres de la lección vista en clase, correspondiente a la presentación "5 Búsqueda local", páginas 21 a 23
+
+************************** mi resumen ************************** 
+
+Resumen 26 de Febrero:
+
+Vemos un repaso de lo viso anteriormente y la última parte del tema "5 Búsqueda local".
+
+Los algoritmos genéticos (Genetic algorithms) juntan la búsqueda local estocástica + genera sucesores a partir de pares de estados. Ahora un sucesor proviene de combinar dos estados principales.
+
+Comienza con k estados generados aleatoriamente, que llamamos población; cada uno de esos estados se llama individual
+Cada individuo se representa como una cadena sobre un alfabeto finito.
+Define una función de aptitud que debería devolver valores más altos para mejores estados. 
+La probabilidad de ser elegido para la reproducción es directamente proporcional a la aptitud.
+Por último vemos como algunos de los algoritmos de búsqueda locales vistos no funcionan para resolver el problema propuesto de querer ubicar tres aeropuertos es Rumanía, pero hay otros como: first-choice, hill-climbing y simulates annealing, si podrían resolver el problema pero estos algoritmos escogen un sucesor aleatorio. Pero la mejor forma de resolverlo es con los espacios de estado continuo.
+
+Los métodos de discretización convierten el espacio continuo en espacio discreto. Usan métodos de gradiente. Los gradientes nos dan un criterio para elegir el próximo vecino sin considerar un conjunto infinito de opciones.
+
+*************** Nota y aclaraciones del profesor *************** 
+
+Calificación	10,00 / 10,00
+
+Comentarios de retroalimentación:	
+Muy buen resumen
+
+****************************************************************

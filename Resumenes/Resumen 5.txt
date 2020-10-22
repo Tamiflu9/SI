@@ -1,0 +1,33 @@
+*************************** enunciado **************************
+
+Resumen de la primera sesión del miércoles 12 de Febrero
+
+Escribe un resumen corto de en torno a 140 caracteres de la lección vista en clase, correspondiente a la presentación 
+"3 Resolución de problemas y búsqueda no informada", páginas 36 a 71
+
+************************** mi resumen ************************** 
+
+Resumen dia 12 de Febrero:
+
+Vimos:
+
+(la búsqueda en anchura)
+
+Breadth-firts search: que es una cola FIFO, consiste en recorrer comenzando desde la raíz e ir explorando todos los vecinos de este nodo. A continuación para cada uno de los vecinos se exploran sus respectivos vecinos adyacentes, y así hasta que se recorra todo el árbol.
+
+(la búsqueda en profundidad)
+
+Depth-first search: que es una cola LIFO, que consiste en ir expandiendo todos y cada uno de los nodos que va localizando, de forma recurrente, en un camino concreto.
+
+iterative deeping search: combina los beneficios de las anteriores.
+
+Los grafos de búsqueda son más eficientes que los árboles de búsqueda.
+
+*************** Nota y aclaraciones del profesor *************** 
+
+Calificación	10,00 / 10,00
+
+Comentarios de retroalimentación:	
+Buen resumen....
+
+****************************************************************

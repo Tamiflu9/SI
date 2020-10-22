@@ -1,0 +1,77 @@
+*************************** enunciado **************************
+
+Resumen de la clase de repaso del Tema 8.
+
+Escribe un resumen corto de en torno a 140 caracteres de la lección vista en clase, correspondiente a la presentación "clase de repaso del Tema 8"
+
+************************** mi resumen ************************** 
+
+Resumen 16 de Abril:
+
+Learning agent.
+
+Contamos con una representación factorizada (representación plana, atributo-valor). Cada ejemplo de entrada es un vector (vectores de atributos).
+
+El conjunto de datos es del tipo : entrada-salida.
+
+Necesitamos mapear las entradas para generar la mejor salida posible.
+
+Tipos de aprendizaje:
+
+Aprendizaje no supervisado:
+Tenemos muchos datos pero no tenemos información asociada a esos datos.
+
+El algoritmo grupa los datos según lo que se parecen entre si.
+
+Aprendizaje supervisado:
+Tenemos un conjunto de datos asociados. Lo que hacemos es aprender en base a esos datos, para hacer predicciones sobre estos datos y tener una función que los asocie. 
+
+ej.: tenemos muchos correos que son spam y otros que no, construyo un algoritmo para que aprenda y asi poder decidir si el próximo correo es spam, ya tenemos datos clasificados (aprende de ellos) , en cambio el aprendizaje no supervisado solo los agruparía por similitud.
+
+En resumen, partimos de un conjunto de entrenamiento (datos ya clasificados, desde los que partimos para aprender)construyo un algoritmo de entrenamiento para encontrar una hipótesis y para saber lo buena que es, se aplica sobre otro conjunto de datos que no haya visto el algoritmo y vemos si con lo que ha aprendido puede distinguir bien los otros datos y generalizar bien.
+
+Tipos de aprendizaje supervisado, dependiendo del conjunto de valores que devuelve la función tenemos:
+
+Clasificacion:
+                   
+si la salida es finito. ej: correos, clases: spam y no spam.
+
+Regresion:
+
+si la salida es un numero real. ej: información de casas y precios, para cada casa tenemos unos atributos (metro cuadrado, habitaciones, zona..) cada casa tiene asociado un precio. El objetivo es hacer una función que dado una casa con sus características nos devuelva un numero real, el precio.
+
+Aprendizaje por refuerzo:
+	
+- castigos o recompensas. 
+
+Es iterativa, menos general, dirigido a cosas concretas y que se tenga que reaccionar en el momento.
+
+Nosotros buscamos hipótesis en un espacio de hipótesis y tiene que ver con los datos y el algoritmo que usemos.
+
+La función de hipótesis que obtengamos tiene que ser consistente con nuestros datos, debe cumplir los datos de entrenamiento o ajustarse a ellos.
+
+Habrá varias hipótesis que se ajustan, pero nos quedamos con la mas simple.
+
+Lo que debe hacer la hipótesis que escogemos es generalizar mejor nuestros datos. La que mejor asocie nuestros datos y otros.
+
+idea de esto:
+
+tenemos un conjunto de datos -> usamos un algoritmo de aprendizaje -> ese algoritmo tiene un espacio de hipotiposis -> nos quedamos con la hipótesis mas simple.
+
+Algoritmos de aprendizaje de decisión:
+
+árboles de decisión:
+
+sirven para hacer clasificación.
+	
+genera un árbol de decisión (salida).
+	
+es fácil de interpretar, cada nodo es una pregunta asociada a un atributo, las aristas son los valores de los atributos, las hojas son valores finales de clasificación.
+
+proporcional a la lógica proposicional
+
+sirve para bastantes tareas pero no para todas. El espacio de hipótesis son todos los posibles árboles para nuestros datos.
+
+usamos los atributos mas discriminatorios para tener el árbol de decisión mas pequeño posible, nos guiamos por la entropia de los atributos, nos quedamos con los que tengan menos entropia.
+
+****************************************************************

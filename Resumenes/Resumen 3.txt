@@ -1,0 +1,22 @@
+*************************** enunciado **************************
+
+Resumen de la segunda sesión del jueves 30 de Enero
+
+Escribe un resumen corto de en torno a 140 caracteres de la lección vista en clase, correspondiente a la presentación "3 Resolución de problemas y búsqueda no informada", páginas 1 a 6
+
+************************** mi resumen ************************** 
+
+ Resumen dia 30 de Enero:
+
+Vimos la idea de tener un entorno observable, discreto y determinista en el que el nuevo estado del entorno resultante de una acción se puede determinar antes de realizar la acción.
+
+ejemplo de clase: como llegar a Rumanía por el camino más corto.
+
+*************** Nota y aclaraciones del profesor *************** 
+
+Calificación	8,00 / 10,00
+
+Comentarios de retroalimentación	
+Los agentes de resolución de problemas modelan el entorno como un espacio de estados, entre los que nos movemos mediante acciones, cuyo resultado define una función de sucesor. Los agentes planifican un camino desde el estado actual hasta un estado que cumple el test de estado objetivo, buscando en ese espacio de estado, y ejecutan ese plan ignorando las percepciones del entorno
+
+****************************************************************

@@ -1,0 +1,32 @@
+*************************** enunciado **************************
+
+Resumen del Tema 10. JADE
+
+************************** mi resumen ************************** 
+	
+Implementación de sistemas multiagentes con JADE.
+
+arquitectura distribuida. 
+contenedores con agentes.
+un proceso java por cada contenedor.
+Contenedor: instancia ejecutable de JADE.
+
+En el contenedor principal siempre hay dos agentes especiales que siempre se ejecutan, el AMS y el DF.
+
+AMS: sistema de gestión de agentes que se encarga de proveer nombres a los agentes. Se encarga de crear y destruir los agentes
+DF: ofrece un servicio donde los agentes se pueden registrar y otros agentes pueden consultar que agentes se están ejecutando en un determinado momento en el contenedor principal.
+Responsabilidades del contenedor principal es manejar las tablas que contienen toda la información referente a los agentes.
+
+Agentes.
+
+El comportamiento de un agente viene determinado por los comportamientos que nosotros definamos en él. Para ello hay que crear comportamientos 'behaviours' y hay que decirle como debe ejecutarlo. 
+
+Cada comportamiento define una tarea o subtarea y son elementos java. Se ejecutan según un Round-Robin de igual frecuencia.
+
+Tipos: One-shot, cyclic, conditional.
+
+La comunicación entre agentes se hace mediante un intercambio de mensajes asíncrono. Cada agente tiene un 'mailbox' que funciona como un correo. (los mensajes también son objetos)
+
+Estados: activo, iniciado, suspendido, en espera, en tránsito. Y podemos ir cambiando de estado con su correspondiente función.
+
+****************************************************************

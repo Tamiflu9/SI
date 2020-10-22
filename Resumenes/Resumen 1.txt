@@ -1,0 +1,24 @@
+*************************** enunciado **************************
+
+Resumen de la sesión del miércoles 29 de Enero.
+Escribe un resumen corto de en torno a 140 caracteres de la lección vista en clase, correspondiente a la presentación "1 Introducción a la Inteligencia Artificial"
+
+************************** mi resumen ************************** 
+
+Resumen día 29 de Enero:
+
+
+Vimos una introducción sobre la historia de la inteligencia artificial. Se basa en agentes racionales. Un gente racional es una entidad que percibe y actúa. 
+
+
+*************** Nota y aclaraciones del profesor *************** 
+
+Calificación	8,00 / 10,00
+
+Comentarios de retroalimentación:
+	
+Si bien es cierto que abstraemos a un agente como una función que va de secuencias de percepciones a la acción siguiente a realizar, en esta presentación también discutimos diferentes caracterizaciones de la inteligencia, tratando de decidir cual nos interesa más.
+Consideramos caracterizaciones de la inteligencia desde 2 ejes, actuar vs pensar, y hacerlo como humanos vs hacerlo racionalmente. Eso nos da 4 posibles combinaciones que consideramos, y la conclusión es que actuar racionalmente, es decir, actuar para conseguir un objetivo medible, es la caracterización de la inteligencia que nos interesa en este curso. Nos interesa porque es la más sencilla de medir y la que tiene más aplicación para construir sistemas útiles en la práctica. Pensar racionalmente no es siempre necesario para construir un agente útil, por ejemplo un termostato se puede considerar un agente que actúa para  conseguir el objetivo de mantener una habitación a temperatura constante, y por tanto actúa racionalmente, pero no realiza ningún proceso de pensamiento racional o razonamiento.
+
+
+****************************************************************

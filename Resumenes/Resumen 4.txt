@@ -1,0 +1,29 @@
+*************************** enunciado **************************
+
+Resumen de la sesión del miércoles 5 de Febrero
+
+Escribe un resumen corto de en torno a 140 caracteres de la lección vista en clase, correspondiente a la presentación "3 Resolución de problemas y búsqueda no informada", páginas 7 a 35
+
+************************** mi resumen ************************** 
+
+ 	
+Resumen dia 5 de Febrero:
+
+Vimos la idea basica de un árbol de busqueda que consiste en la exploración simulada del espacio de estados mediante la generación de sucesores de estados ya explorados.
+
+Algunas estrategias uniformes de búsqueda que se distinguen por el orden en la expanción de sus nodos.
+
+búsqueda en anchura
+búsqueda en pronfudidad
+búsqueda en pronfudidad con limite
+busqueda uniforme..
+
+*************** Nota y aclaraciones del profesor *************** 
+
+Calificación	9,00 / 10,00
+
+Comentarios de retroalimentación	
+Buen resumen, pero las estrategias no son uniformes, lo único que es uniforme es la estrategia de búsqueda por coste uniforme.
+
+
+****************************************************************
