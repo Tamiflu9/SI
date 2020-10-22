@@ -1,0 +1,46 @@
+Katya Alejandra Rengel Lazcano.
+Tamara Huertas Smolis.
+
+Preguntas Practica 4:
+
+1. ¿Qué nuevos tests de MapCSPTest pasan y cuáles no? 
+
+De los test nuevos el unico que no pasa (testMinConflictsStrategy) es en el que añadimos únicamente la restricción de que “WA” no puede 
+tener el mismo color que “V”. Todos los demás test si que pasan. Si intentamos resolver V != WA no podremos, y con una restricción más tampoco.
+
+Los otros test si pasan (“testImprovedBacktrackingStrategy”, “testBacktrackingStrategy”).
+
+El minConflictsStrategy da error porque es un proceso de selección de variables aleatorias y asignación de valores de conflicto mínimo y 
+se repite hasta que logra encontrar una solución o hasta que alcanza un número máximo de iteraciones preseleccionadas.
+
+2. ¿Qué sudokus tienen solución y cuáles no? ¿Todos los algoritmos son capaces de resolver todos los sudokus rápidamente, o algunos no? 
+
+Para “SolvedSudoku” y “SolvedSudokuTest”:
+
+Al principio los sudokus que tienen solución son los sudokus que están mal ya que teníamos la aserción: (assertThat(true, is(false))), 
+si la cambiamos por: (assertThat(true, is(true))), nos quedamos con los tests que realmente son correctos.
+Para que todos los tests funcionen debemos crear 3 métodos. El método “rowConstraint” para validar las filas, el método “columnConstraint” 
+para validar las columnas y el método “checkConstraint” que usan los dos anteriores para validar y verificar que se cumplen las restricciones del sudoku. 
+Y por último añadimos en “checkSudokuSolved” las restricciones necesarias.
+
+Para “SudokuCSP” y “SudokuCSPTest”:
+
+El test que no funcionaba para ninguno de los sudokus era el de “testObviousSudokuBacktrackingStrategy”.
+Para que funcionaran los dos tests había que modificar la función “setupConstraints” añadiendo las restricciones necesarias.
+
+3. ¿Qué algoritmo es más rápido? ¿Qué valores de los argumentos de la constructora de ImprovedBacktrackingStrategy funcionan mejor?, 
+¿funcionan igual para todos los problemas? 
+
+El algoritmo más rápido es el “ImprovedBacktrackingStrategy”. 
+El algoritmo más lento de todos es “BacktrackingStrategy”. 
+El algoritmo “MinConflictsStrategy” no pasa los tests.
+
+Para los valores (true, false, true, false) de la constructora de “ImprovedBacktrackingStrategy” funciona mejor el algoritmo en todos los sudokus. 
+Con estos parámetros el algoritmo logra ser más rápido. 
+
+4. ¿Son deterministas todos los algoritmos? 
+
+El algoritmo MinConflictsStrategy resuelve los problemas de satisfacción de restricciones mediante búsqueda local, por tanto es determinista 
+ya que con la misma entrada obtiene un solo resultado.
+Los algoritmos BacktrackingStrategy e ImprovedBacktrackingStrategy, que hereda de BacktrackingStrategy, se basan en la búsqueda recursiva en 
+profundidad que es un algoritmo de búsqueda no informada. No son deterministas ya que con la misma entrada obtiene muchos posibles resultados.
