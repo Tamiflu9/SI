@@ -1,0 +1,75 @@
+************************************************************************************************************** 
+************************************************* PRÁCTICA 2 ************************************************* 
+************************************************************************************************************** 
+		Alumnas:					Grupo:
+		Tamara Huertas Smolis				G6
+		Katya Alejandra Rengel Lazcano
+**************************************************************************************************************
+************************************************* RESPUESTAS *************************************************
+************************************************************************************************************** 
+
+1. ¿De todos los algoritmos vistos en esta y la práctica anterior, ¿cuál funciona mejor? ¿Por qué?.
+
+	Después de todas las anteriores comparaciones, ejecuciones y resultados, funciona mejor el algoritmo 
+	de búsqueda informada A* ya que es una combinación de los dos algoritmos vistos anteriormente en la 
+	práctica 1 (Primero en Anchura y Primero en Profundidad). Además, este algoritmo tiene una heurística 
+	que nos ayuda a elegir el nodo a expandir siendo este de menor coste.
+
+2. En la búsqueda informada, ¿cómo valorarías el efecto de cada heurística?¿Varía mucho o poco? Justifica la respuesta.
+
+	Heurística basura total: Esta heurística, observando el código va sumando las casillas que contienen basura. 
+	Al no conocer la distancia a la que se encuentra el objetivo, en principio, todas tendrían la misma prioridad, 
+	por lo tanto, iría expandiendo hasta encontrar el objetivo, haciendo múltiples árboles, consumiendo más 
+	memoria y ésto sería un problema, pudiendo incluso entrar en un bucle infinito. Si ésto no ocurriese y 
+	llegará al objetivo tardaría más que la heurística donde conocemos la distancia salvo el caso en el cual 
+	el objetivo se encontrase muy cercano a la raíz o la primera expansión de los nodos.
+
+	Heurística basura total + distancia: Esta heurística, al conocer la distancia, siempre escogería el camino 
+	más corto al objetivo, expandiendo únicamente los nodos más prometedores con menor valor(distancia), en 
+	nuestro caso las acciones,que llevan hacia el objetivo, por lo tanto sería más rápido que la heurística anterior.
+
+3. ¿Cuál de las heurísticas encuentra la solución más rápidamente?. 
+
+	Funciona mejor la de “basura total + distancia”, ya que ésta tiene toda la información en los nodos
+	(Por ejemplo, en nuestro caso, cada nodo conocería la ubicación del objetivo, la suciedad, por consiguiente 
+	sabría la distancia a la que se encuentra). 
+
+	Su funcionamiento sería: Desde el nodo origen expande según las acciones válidas (nos referimos con válidas 
+	a que por ejemplo, si está en la ubicación (0,0) una opción no válida sería la izquierda), seleccionando los 
+	nodos más prometedores, es decir, con una distancia menor hacia el objetivo.
+
+4. ¿Qué heurísticas son admisibles y cuáles no lo son? Justifica tu respuesta.
+
+	La Heurística Manhattan dispone de alguna información sobre la proximidad de cada estado a un estado objetivo, 
+	lo que permite explorar en primer lugar los caminos más prometedores. La heurística de manhattan nos da la 
+	distancia mínima entre dos coordenadas de una forma parecida a la utilizada en la distancia euclidiana.
+
+	Por eso es una heurística admisible ya que nunca sobreestima el coste de alcanzar el objetivo, o sea, que 
+	en el punto actual la estimación del coste de alcanzar el objetivo nunca es mayor que el menor coste posible.
+
+	 A* es óptimamente eficiente esto significa que no existe otro algoritmo que expanda menos nodos antes 
+	de encontrar la solución, está demás decir que es completo y óptimo.
+
+5. ¿Cómo de grande puedes hacer la matriz? ¿Depende de cuentas basuras añadas? ¿Depende de la posición de la basuras?.
+
+	Una matriz de 8x8. Hemos observado con bajando a una matriz de 9x9 sigue teniendo problemas de memoria, 
+	y con una matriz de 8x8 se ha conseguido llegar al objetivo.
+
+	Con más suciedad varia el comportamiento, si incluyes más de dos casillas con basura de manera dispersa, 
+	es decir, que haya bastante distancia entre ellas, al expandir los nodos, vas a llegar a tener un árbol con 
+	múltiples nodos que a su vez incluye también otros múltiples nodos, quedándose sin memoria.
+
+	Sin embargo, si ponemos múltiples casillas contiguas de suciedad, ya sea en la diagonal, en fila, o muy próximas 
+	unas de otras, con lo cual el árbol de expansión va a ser menor, pudiendo llegar a encontrar el objetivo, 
+	sin tener problemas de memoria.
+
+	Con más suciedad, la ubicación de la suciedad afecta ya que si esta se encuentra lejana, tendríamos que 
+	expandir más nodos que si se encontrara en un nodo más cercano al origen debido a que genera más acciones. 
+	Pudiendo llegar a tener problemas de memoria.
+
+	La heurística se ve afectada porque hay que expandir más nodos ya que una vez que llega a una casilla con 
+	suciedad, tendría que volver a calcular la expansión de los nuevos árboles. En el caso de la heurística con 
+	distancia, al tener múltiples casillas con suciedad, elegiría la más cercana (menor distancia de donde se 
+	encuentra) y volvería a calcular la siguiente casilla más cercana con suciedad y así sucesivamente. 
+	En el otro caso, la heurística con “basura total” iría expandiendo hasta encontrar la primera casilla con 
+	suciedad sin saber su ubicación, y volvería a expandir nuevos nodos.

@@ -1,0 +1,65 @@
+Practica3
+
+PREGUNTAS:
+1. ¿Por qué se quedaba parada la aspiradora en la versión de VacuumApp del código del
+enunciado?
+
+En la versión de VacuumApp del código del enunciado la aspiradora no es capaz de moverse
+desde la posición inicial, por lo que no es capaz de limpiar la basura. Esto ocurre para la
+heurística GlobalDirtHeuristic que en realidad devuelve el valor real del estado. Esto es
+un ejemplo de situación en el que el valor de un estado define un state space landscape que
+es un poco conveniente para el algoritmo.
+
+Al no conocer la distancia a la que se encuentra el objetivo, en principio, todas tendrían la misma 
+prioridad, por lo tanto, iría expandiendo hasta encontrar el objetivo, haciendo múltiples árboles, 
+consumiendo más memoria y ésto sería un problema, pudiendo incluso entrar en un bucle infinito. 
+
+En cambio para GlobalDirtAndDistanceHeuristic al conocer la distancia, siempre escogerá el camino más 
+corto al objetivo, expandiendo únicamente los nodos más prometedores con menor valor(distancia).
+
+
+2. Explica por qué funciona la heurística que has utilizado para arreglar HillClimbingTest
+después de añadir la aserción.
+
+Inicialmente usamos la heurística GlobalDirtHeuristic, la cual falla. Con esta heurística siempre
+se queda en el estado 'Action[name==NoOp]'.
+
+Al cambiar la heurística por DirtAndDistanceHeuristic, funciona. Esto se debe a que al conocer la distancia,
+desde la ubicación inicial se expanderán los nodos mas prometedores (aquellos que nos harán encontrar el
+objetivo con un menor coste) de forma más rápida, por ello ya no se queda en el estado 'Action[name==NoOp]'.
+
+Como conocemos la información de los nodos y sabemos los veinos que van a mejorar el estado actual en el que
+se encuentran, llegamos a la solución.
+
+3. Compara los caminos calculados por hill climbing y enfriamiento simulado. ¿Qué caminos
+son preferibles? ¿Qué caminos preferirías que utilizara un robot aspiradora en el mundo
+real?
+
+Para el ejemplo que hemos puesto de 12x12, el camino mas corto es el de HillClimbing.
+
+Solution found: (HillClimbingSearch)
+	Down, Down, Right, Down, Right, Down, Suck
+
+Solution found: (SimulatedAnnealingSearch)
+	Right, Down, Down, Left, Noop, Noop, Noop, Right, Noop, Right, Left
+	Down, Noop, Right, Noop, Left, Noop, Left, Up, Down, Noop, Up, Noop
+	Noop, Noop, Noop, Noop, Right, Right, Down, Noop, Up, Right, Noop
+	Noop, Down, Noop, Down, Up, Down, Down, Left, Right, Noop, Noop, Up
+	Down, Left, Noop, Up, Noop, Left, Right, Suck, Left, Down, Noop, Down
+	Noop, Left, Down, Noop, Up, Up, Down, Down, Noop, Right, Noop, Up
+	Down, Down, Down
+
+4. ¿Observas variaciones significativas en los tiempos de cómputo con búsquedas locales
+comparado con búsquedas informadas? ¿Qué algoritmos crees que escalan mejor a espacios
+de búsqueda grandes?
+
+Para espacios de búsqeuda grandes, los algoritmos de búsqueda informada como el algoritmo AStarSearch
+se produce un error de memoria, no consigue llegar al objetivo pese a tener la informacion de los nodos
+y de la distancia hacia el objetivo.
+
+Sin embargo, con HillClimbingSearch y SimulatedAnnealingSearch, no tenemos ese problema ya que al tener
+un componente aleatorio no necesita de recursos. Pero el algoritmo SimulatedAnnealingSearch tiene el 
+problema de que puede que no llegue al objetivo. En cambio el algoritmo HillClimbingSearch sería la mejor
+opción para llegar al objetivo porque además de elegir siempre el vecino mejor valorado y conocer la 
+distancia al objetivo, siempre llegará trás esplegar cada nodo y elegirá los nodos más prometedores y con 
+el mejor coste.
